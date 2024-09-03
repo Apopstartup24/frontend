@@ -1,6 +1,6 @@
-*{
-
-    margin : 0;
+body{
+    font-family: Public Sans;
+    height: 3000px;
+    margin: 0;
     padding: 0;
-
 }
