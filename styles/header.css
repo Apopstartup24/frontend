@@ -1,0 +1,44 @@
+header {
+    width: 100%;
+    color: white;
+    background-color : black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 3%;
+    justify-content: center;
+
+
+}
+
+nav ul li {
+
+    display: inline-block;
+    list-style: none;
+    font-weight: 600;
+    margin : 10px 20px;
+
+}
+
+nav .search{
+
+
+    flex-basis: 400px;
+    width: 50px;
+
+}
+
+nav .logo{
+    text-align: center;
+    flex-grow: 1;
+
+}
+
+nav input{
+
+    justify-items: center;
+    width: 200px;
+
+}
