@@ -11,16 +11,36 @@
         <link rel="stylesheet" href="./styles/header.css">
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="./script.js"></script>
     </head> 
         
     <body>
         <header>
             <nav>
                 <div class="explore">
-                    <button>
-                        <span>Explore</span>
+                    <button onclick="handleDropdown()">
+                        Explore
                         <span class="material-symbols-outlined">expand_circle_down</span>
-                    </button>
+                    </button >
+                    <div class="explore-dropdown" id="dropdownMenu">
+                       <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-img">
+                            <h3>Featured</h3>
+                            <div class="dropdown-img-list">
+                                <div class="img-list">Img 1</div>
+                                <div class="img-list">Img 2</div>
+                                <div class="img-list1">Img 3</div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
                 <div class="search">
                     <input type ="search" placeholder="Search..." />

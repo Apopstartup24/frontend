@@ -14,8 +14,8 @@ nav {
 }
 
 nav .explore {
+    float:left;
     flex-basis: 110px;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     
@@ -23,7 +23,8 @@ nav .explore {
 
 .explore button {
 
-    padding: 0;
+    cursor: pointer;
+    padding: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,7 +38,55 @@ nav .explore {
 
 } 
 
-nav ul li {
+.explore-dropdown{
+
+    display: none;
+    background-color: black;
+    width: auto ;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.show{
+    display: flex;
+}
+
+.explore-dropdown .dropdown-menu{
+    margin-right: 200px;
+}
+.explore-dropdown .dropdown-menu a{
+
+
+    color: white   ;
+    text-decoration: none;
+    display: block;
+    padding: 12px 5px;
+
+}
+
+.explore-dropdown .dropdown-menu ul li{
+
+    display: list-item;
+    font-weight: 200;
+}
+
+.explore-dropdown .dropdown-img{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dropdown-img .dropdown-img-list{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+nav ul li{
 
     display: inline-block;
     list-style: none;
