@@ -18,6 +18,7 @@ ul {
     padding:0;
 }
 nav .explore {
+    position: relative;
     float:left;
     flex-basis: 110px;
     align-items: center;
@@ -31,7 +32,7 @@ nav button {
     padding: 8px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: transparent;
     border: none;
     box-shadow: none;
@@ -42,24 +43,40 @@ nav button {
 
 } 
 
+.explore .dropdown-content{
+
+    left: 0;
+}
+
+.news-multi-live .dropdown-content{
+
+    min-width: 250px;
+    right: 0;
+}
+
 .dropdown-content{
 
     display: none;
     background-color: black;
     width: auto ;
-    right: 1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     position: absolute;
+    padding: 5px 20px;
     z-index: 1;
     text-decoration: none;
 }
 
+.dropdown-content .arrow{
+
+    margin-left: 10px;
+}
 .show{
     display: flex;
 }
 
 .dropdown-content .dropdown-menu-explore{
-    margin-right: 200px;
+    margin-right: 50px;
+    min-width: 200px;
 }
 .dropdown-content .dropdown-menu-explore a{
 
@@ -91,8 +108,9 @@ nav button {
 
 }
 
-
-
+.news-multi-live .dropdown-list{
+    position: relative;
+}
 .news-multi-live .Logo-live{
     display: inline;
     border-color:#f64137;
