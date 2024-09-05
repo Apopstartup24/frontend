@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./styles/header.css">
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <script src="./script.js"></script>
     </head> 
         
@@ -18,28 +19,26 @@
         <header>
             <nav>
                 <div class="explore">
-                    <button onclick="handleDropdown()">
-                        Explore
+                    <button class="dropdown-button" onclick="toggleDropdown('dropdownExplore')">
+                        <span>Explore</span>
                         <span class="material-symbols-outlined">expand_circle_down</span>
                     </button >
-                    <div class="explore-dropdown" id="dropdownMenu">
-                       <div class="dropdown-menu">
+                    <div class="dropdown-content" id="dropdownExplore">
+                       <div class="dropdown-menu-explore">
                             <ul>
                                 <li><a href="#">Link 1</a></li>
                                 <li><a href="#">Link 2</a></li>
                                 <li><a href="#">Link 3</a></li>
                             </ul>
                         </div>
-                        <div class="dropdown-img">
+                        <div class="dropdown-img-explore">
                             <h3>Featured</h3>
                             <div class="dropdown-img-list">
                                 <div class="img-list">Img 1</div>
                                 <div class="img-list">Img 2</div>
                                 <div class="img-list1">Img 3</div>
-
                             </div>
                         </div>
-                        
                     </div>
                 </div>
                 <div class="search">
@@ -48,12 +47,43 @@
                 <div class="logo">
                     <img src="./assets/nasa-logo.svg" /> 
                 </div>
-                <ul>
-                    <li><span>News & Events</span></li>
-                    <li><span>Multimedia</span></li>
-                    <li><span>NASA+</span></li>
-                </ul>
+                <div class="news-multi-live">
+                    <ul>
+                        <li>
+                            <div class="dropDown-list">
+                                <button class="dropdown-button" onclick="toggleDropdown('handleDropdown_news')">
+                                    <span>News & Events</span>
+                                    <span class="material-symbols-outlined">
+                                        arrow_drop_down
+                                    </span>
+                                </button>
+                                <div class="dropdown-content" id="handleDropdown_news">
+                                    <button ><h3>News & Events</h3><span class="arrow">&#8594;</span> </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropDown-list">
+                                <button  class="dropdown-button" onclick="toggleDropdown('handleDropdown_multimedia')">
+                                    <span>Multimedia</span>
+                                    <span class="material-symbols-outlined">
+                                        arrow_drop_down
+                                    </span>
+                                </button>
+                                <div class="dropdown-content" id="handleDropdown_multimedia">
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <button>
+                                <span>NASA+</span><span class="Logo-live">L I V E</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </nav>
+                
         </header>
         <div class="main">
             <div class="headline">

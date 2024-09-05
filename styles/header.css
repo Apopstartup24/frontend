@@ -7,12 +7,16 @@ header {
 nav {
     display: flex;
     align-items: center;
-    padding: 10px 2%;
+    padding: 10px 10px;
     justify-content: center;
 
 
 }
 
+ul {
+    margin: 0;
+    padding:0;
+}
 nav .explore {
     float:left;
     flex-basis: 110px;
@@ -21,10 +25,10 @@ nav .explore {
     
 }
 
-.explore button {
+nav button {
 
     cursor: pointer;
-    padding: 16px;
+    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,11 +42,12 @@ nav .explore {
 
 } 
 
-.explore-dropdown{
+.dropdown-content{
 
     display: none;
     background-color: black;
     width: auto ;
+    right: 1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     position: absolute;
     z-index: 1;
@@ -53,10 +58,10 @@ nav .explore {
     display: flex;
 }
 
-.explore-dropdown .dropdown-menu{
+.dropdown-content .dropdown-menu-explore{
     margin-right: 200px;
 }
-.explore-dropdown .dropdown-menu a{
+.dropdown-content .dropdown-menu-explore a{
 
 
     color: white   ;
@@ -66,32 +71,44 @@ nav .explore {
 
 }
 
-.explore-dropdown .dropdown-menu ul li{
+.dropdown-content .dropdown-menu-explore ul li{
 
     display: list-item;
     font-weight: 200;
 }
 
-.explore-dropdown .dropdown-img{
+.dropdown-content .dropdown-img-explore{
 
     display: flex;
     flex-direction: column;
 
 }
 
-.dropdown-img .dropdown-img-list{
+.dropdown-content .dropdown-img-list{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
 }
 
-nav ul li{
 
+
+.news-multi-live .Logo-live{
+    display: inline;
+    border-color:#f64137;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 8px;
+}
+
+nav .news-multi-live ul li{
+
+  
     display: inline-block;
     list-style: none;
     font-weight: 800;
-    margin : 10px 20px;
+    margin : 10px 0px;
 
 }
 
@@ -110,6 +127,15 @@ nav .search .material-symbols-outlined {
 
   color: white;
 
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 20
 }
 
 nav .logo{

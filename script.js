@@ -1,13 +1,28 @@
-function handleDropdown() {
-    document.getElementById("dropdownMenu").classList.toggle("show");
-  }
+function toggleDropdown(dropdownId) {
+  // Stop the event from bubbling to window.onclick
+  event.stopPropagation();
+
+  // Get the current dropdown
+  var dropdown = document.getElementById(dropdownId);
+
+  // If it's already open, close it
+  var isDropdownOpen = dropdown.classList.contains("show");
   
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.explore button')) {
-    var dropdownMenu = document.getElementById("dropdownMenu");
-      if (dropdownMenu.classList.contains('show')) {
-        dropdownMenu.classList.remove('show');
-      }
-    }
+  // Close all dropdowns first
+  closeAllDropdowns();
+
+  // If the clicked dropdown wasn't open, open it now
+  if (!isDropdownOpen) {
+    dropdown.classList.add("show");
   }
+}
+
+function closeAllDropdowns() {
+  const dropdowns = document.querySelectorAll(".dropdown-content");
+  dropdowns.forEach(dropdown => dropdown.classList.remove("show"));
+}
+
+// Close the dropdowns if the user clicks anywhere outside a dropdown button
+window.onclick = function() {
+  closeAllDropdowns();
+}
