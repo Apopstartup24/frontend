@@ -104,8 +104,8 @@ nav button {
 
 }
 .dropdown-content .dropdown-menu-explore{
-    margin-right: 50px;
-    width: 25%;
+    margin: 30px 50px 0 0;
+    width: 20%;
     flex: 0 1 auto;
     border-right: 1px solid gray;
 
@@ -251,8 +251,9 @@ nav input{
     justify-items: center;
     color: white;
     width: 100%;
-    height: 30px;
-    background-color: transparent;
-    border: 1px solid white;
+    height: 32px;
+    background-color: black;
+    border: 1px solid gray;
+    padding-left: 10px;
 
 }
