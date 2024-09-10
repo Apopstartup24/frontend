@@ -13,12 +13,14 @@ nav {
 
 }
 
-ul {
+
+
+ul, li {
+    list-style: none;
     margin: 0;
     padding:0;
 }
 nav .explore {
-    position: relative;
     float:left;
     flex-basis: 110px;
     align-items: center;
@@ -54,6 +56,8 @@ nav button {
     right: 0;
 }
 
+
+
 .dropdown-content{
 
     display: none;
@@ -61,30 +65,116 @@ nav button {
     width: auto ;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     position: absolute;
-    padding: 5px 20px;
+    padding: 1rem;
     z-index: 1;
     text-decoration: none;
+    list-style: none;
 }
 
 .dropdown-content .arrow{
 
     margin-left: 10px;
 }
+
+
+.dropdown-content a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.dropdown-content li:hover, .dropdown-menu-explore li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+
+}
 .show{
     display: flex;
+    flex-direction: column;
 }
 
+.explore .show{
+    flex-direction: row;
+    margin: auto;
+}
+
+#dropdownExplore{
+    width: 100%;
+
+}
 .dropdown-content .dropdown-menu-explore{
-    margin-right: 50px;
-    min-width: 200px;
-}
-.dropdown-content .dropdown-menu-explore a{
+    margin: 30px 50px 0 0;
+    width: 20%;
+    flex: 0 1 auto;
+    border-right: 1px solid gray;
 
+}
+
+.dropdown-content .dropdown-img-explore{
+
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+
+}
+
+.dropdown-img-list{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3.5rem;
+}
+
+.img-list{
+    padding: 0 1rem 0 0;
+}
+
+
+.dropdown-img-list img{
+    height: 20rem;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.article-type-date{
+    display: flex;
+    align-items: center;
+    
+}
+.bookmark{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.bookmark-logo{
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+.dropdown-img-explore h4 {
+
+    color: gray;
+}
+
+.dropdown-img-explore .article-type-date .heading-12{
+    color: gray;
+}
+.heading-12{
+    font-size: 12px;
+}
+.heading-16{
+    font-size: 16px;
+}
+.dropdown-menu-explore a{
 
     color: white   ;
-    text-decoration: none;
+    list-style: none;
     display: block;
     padding: 12px 5px;
+    text-decoration: none;
+    font-weight: 300;
 
 }
 
@@ -94,19 +184,8 @@ nav button {
     font-weight: 200;
 }
 
-.dropdown-content .dropdown-img-explore{
 
-    display: flex;
-    flex-direction: column;
 
-}
-
-.dropdown-content .dropdown-img-list{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-}
 
 .news-multi-live .dropdown-list{
     position: relative;
@@ -172,8 +251,9 @@ nav input{
     justify-items: center;
     color: white;
     width: 100%;
-    height: 30px;
-    background-color: transparent;
-    border: 1px solid white;
+    height: 32px;
+    background-color: black;
+    border: 1px solid gray;
+    padding-left: 10px;
 
 }
