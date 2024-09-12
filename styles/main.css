@@ -1,4 +1,111 @@
 .main {
     flex: 1;
     padding: 20px;
+    overflow: hidden;
+}
+
+.p{
+    margin-bottom: 5rem;
+}
+.heading-72{
+    font-size: 72px;
+    margin: 1rem 0;
+
+}
+
+.headline{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    background-image: url("https://www.nasa.gov/wp-content/uploads/2024/09/earth-moon.gif?w=353");
+    background-size:cover;
+    background-position: center;
+    color: white;
+}
+
+.headline-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.headline-content .title{
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    width: 45%;
+}
+
+.title h2{
+    margin-top: 5rem;
+}
+.title a{
+    width: 28%;
+    font-weight: 700;
+    color: white;
+    font-size: 1.5rem;
+    border: 0 solid #d83933;
+    background-color: #d83933;
+    border-radius: .25rem;
+    text-align: center;
+    padding: .75rem .75rem;
+
+}
+
+.title a:hover{
+    border-color: #85211d;
+    background-color: #85211d;
+}
+
+.headline-content .sub-content{
+    display: flex;
+    flex-wrap: wrap;
+    height: 25%;
+    padding: 2rem 0;
+}
+
+.list-sub-content{
+    flex: 0 1 auto;
+    height: 5rem;
+    width: 25%;
+    padding: 0 2rem 0 0;
+}
+
+.list-sub-content .list{
+
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.list-sub-content .list h4{
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+
+.list-sub-content .list a{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+}
+
+.list-sub-content .list a:hover svg{
+   background-color:#85211d;
+}
+
+.list-sub-content .list a span{
+    padding-right: .5rem;
+} 
+.list svg{
+    padding: .1rem;
+    border: 0 solid #d83933;
+    border-radius: 50%;
+    background-color: #d83933;
+}
+
+.play-button{
+    position: absolute;
+    right: 2rem;
+    bottom: 2.5rem;
 }
