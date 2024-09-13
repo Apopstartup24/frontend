@@ -13,6 +13,32 @@
 
 }
 
+.link-arw-red{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link-arw-red svg{
+    padding: .1rem;
+    border: 0 solid #d83933;
+    border-radius: 50%;
+    background-color: #f64137;
+}
+
+.link-arw-red:hover svg{
+    background-color: #85211d;
+}
+
+h3 {
+    color: black;
+    padding-right: .5rem;
+    font-size: 24px;
+}
+
+
+/* Headline Section */
+
 .headline{
     position: relative;
     width: 100%;
@@ -132,3 +158,28 @@
     border-radius: 50%;
     padding: 1rem 1.25rem;
 }
+
+/* Feature & News Section */
+
+.news {
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    padding: 2rem .7rem 1rem .7rem;
+}
+
+.featureNews-content{
+    
+    margin: 0 5rem;
+}
+
+.featureNews-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featureNews-title h2{
+    font-size: 3rem;
+}
+
