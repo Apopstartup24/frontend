@@ -36,6 +36,9 @@ h3 {
     font-size: 24px;
 }
 
+.bookmark{
+    color: white;
+}
 
 /* Headline Section */
 
@@ -165,7 +168,7 @@ h3 {
     box-sizing: border-box;
     background-color: white;
     width: 100%;
-    padding: 2rem .7rem 1rem .7rem;
+    padding: 2rem .7rem 2rem .7rem;
 }
 
 .featureNews-content{
@@ -182,4 +185,115 @@ h3 {
 .featureNews-title h2{
     font-size: 3rem;
 }
+
+.featureNews-imgs{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-height: 25rem;
+}
+
+.media-background{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    box-sizing: content-box;
+
+}
+
+.media-background img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.media-background .img-1{
+    height: 400px;
+}
+.media-background .img-2{
+    height: 400px;
+}
+.media-background .img-3, .media-background .img-4{
+    height: 190px;
+}
+figure{
+    margin: 0;
+}
+
+.main-ftr-img {
+    flex: 1 1 0px;
+    margin-right: 1rem;
+    display: block;
+    position: relative;
+    box-sizing: inherit;
+
+}
+.main-ftr-img .link-main-img .caption{
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(65.99deg,#000 0,transparent 99.04%);
+    
+}
+
+.caption{
+    position: absolute;
+    z-index: 10;
+}
+
+.link-main-img{
+    height: 100%;
+    padding: 1rem;
+
+}
+.link-main-img .caption{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main-ftr-img .fig-temp{
+    box-sizing: inherit;
+    height: 100%;
+}
+
+.article-title h3{
+    color: white;
+}
+
+.article-title h4{
+    color: white;
+    font-weight: 300;
+}
+
+.sec-ftr-img{
+    flex: 1 1 0px;
+}
+.sec-frstImg{
+ 
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.link-sec-img{
+    width: 100%;
+    
+    position: relative;
+}
+.link-thrd-img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 100%;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.top-shelf, .bottom-shelf{
+   flex: 1 1 auto;
+    position: relative;
+}
+
 
